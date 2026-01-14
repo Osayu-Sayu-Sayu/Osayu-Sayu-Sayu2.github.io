@@ -7,16 +7,23 @@
     <title>Webアプリケーション開発2の課題</title>
   </head>
   <body>
-    <h1>ボタンを押すだけの簡単なゲーム！</h1>
-    <p>ボタンを押すことで進んでいく簡単なゲームです<br>
-    ※SEを入れているので音が出ます<br>
-    更新されているかの確認をここのテキストで行おうぜ</p>
-    <div class="btn-container">
-  <button id="btn2">ボタン２</button>
+<h1 id="title">ボタンを押すだけの簡単なゲーム！</h1>
 
-  <!-- クリックで表示させるテキストにはhiddenクラスを付ける -->
-  <p id="btn2-text" class="hidden">ボタン２がクリックされました！</p>
+<p id="description">
+  ボタンを押すことで進んでいく簡単なゲームです<br>
+  ご協力をお願いします<br>
+  ※この物語はフィクションであり、実在の人物・団体とは一切関係ありません
+</p>
+
+<button id="startBtn">スタート</button>
+<button id="retryBtn" style="display:none;">リトライ</button>
+
+<div class="buttons">
+  <button class="choiceBtn" data-choice="1">選択肢1</button>
+  <button class="choiceBtn" data-choice="2">選択肢2</button>
+  <button class="choiceBtn" data-choice="3">選択肢3</button>
 </div>
-    <script src="event.js"></script>
+
+<script src="event.js"></script>
   </body>
 </html>

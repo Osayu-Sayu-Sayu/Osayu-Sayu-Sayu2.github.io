@@ -75,3 +75,35 @@ th, td {
   border: solid 1px #f0f0f0;
   padding: 0.5rem;
 }
+/* --------------------
+          ボタン
+-------------------- */
+.btn-container {
+  text-align: center;
+}
+
+button {
+  width: 80%;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+
+  /* ボタンにカーソルを当てると、カーソルがポインターに変わる */
+  cursor: pointer;
+}
+
+/* ボタンにカーソルを当てたとき、ボタンを半透明にする */
+button:hover {
+ opacity: 0.7;
+}
+
+/* クリックで表示させるテキストを隠す */
+.hidden {
+  display: none;
+}
+
+#btn2-text{
+  margin: 16px 0;
+  font-size: 14px;
+  color: red;
+}
